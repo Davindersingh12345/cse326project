@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-image: url("./b.jpg");
+            ;
+            margin: auto;
+        }
+
+        .right {
+            font-size: x-large;
+            margin: 50px 50px 0 0;
+            padding: auto;
+        }
+
+        .left {
+            color: brown;
+            font-size: xxx-large;
+            margin: 50px 0 0 50px;
+            padding: auto;
+
+        }
+
+        .pet {
+            background-image: url("pet.jpg");
+            background-size: cover;
+            height: 900px;
+            margin: 0px;
+            padding: auto;
+            background-repeat: no-repeat;
+
+
+
+        }
+
+        nav {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:rgb(187, 207, 244);
+            margin: auto;
+            padding: 10px 10px 50px 10px;
+            border: 1px solid red;
+            position: fixed;
+
+        }
+
+        ul li {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        ul li a {
+            text-decoration:none;
+            color:black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover{
+            color:crimson;
+        }
+        a:active{
+            color: brown;
+        }
+
+        p {
+            text-align: justify;
+            font-size: xxx-large;
+            padding: 120px 0 0 20px;
+            color: black;
+
+        }
+
+        button img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .search {
+            height: 50px;
+            width: 500px;
+
+        }
+
+        .f {
+            display: flex;
+            margin-left: 20px;
+            margin-top: 50px;
+        }
+
+        .s {
+            height: 300px;
+            width: 200px;
+            background-color: rgb(239, 220, 198);
+            margin-left: 0px;
+            margin-right: 80px;
+            border-radius: 30px;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+            
+          
+        }
+        .s:hover{
+            border: 3px solid rgb(225, 0, 255);
+        }
+        
+        .alt {
+            display: flex;
+            justify-content: center;
+            background-color: aliceblue;
+            padding-bottom: 30px;
+            font-weight: 400;
+            height: 70vh;
+            padding-top: 60px;
+        }
+
+        .dog {
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            padding: 10px 10px 0px 10px;
+            border-radius: 30px;
+        }
+
+        .d {
+            margin-top: 0px;
+            padding-top: 0px;
+            margin-right: 20px;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+     
+
+        .head {
+            background-color: aliceblue;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 100px;
+            height: 20vh;
+            font-size: xxx-large;
+        }
+
+        .r {
+            height: 285px;
+            width: 350px;
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: rgb(255, 220, 249);
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+
+        }
+
+        .work {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(221, 245, 245);
+            padding-bottom: 30px;
+            height: 70vh;
+           padding-top: 100px;
+
+        }
+
+        .w {
+            height: 90px;
+            width: 100px;
+            justify-content: center;
+
+        }
+
+        .k {
+            text-align: center;
+        }
+
+        .e {
+            font-size: x-large;
+            margin-left: 0px;
+            padding-top: 10px;
+            padding-left: 10px;
+            text-align: center;
+        }
+
+        .h {
+            background-color: rgb(221, 245, 245);
+            ;
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 10px;
+            font-size: xxx-large;
+            height: 20vh;
+        }
+
+        .service{
+            height: 180vh;
+            background-color:aliceblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 50px;
+        }
+        
+        
+
+        .z{
+            height: 290px;
+            width: 560px;
+            background-color: rgb(253, 234, 236);
+            margin-left: 50px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+            margin-right: 50px;
+            display: flex;
+            box-shadow: 10px 5px 16px 10px  rgba(0, 0,0, 0.3);
+        }
+
+        .hc{
+            background-color:aliceblue;
+            padding-top: 80px;
+            padding-left: 150px;
+            font-size: xxx-large;
+        }
+        
+        .b{
+            padding-left: 20px;
+            margin-top:  20px;
+            font-size: x-large;
+            height: 30px;
+            width: 100%;
+            color: rgb(81, 0, 255);
+        }
+        .ser{
+            height: 180px;
+            width: 200px; 
+            padding-top: 10px;
+            padding-left: 10px;
+       
+        }
+        
+
+        .p{
+           
+            font-size: medium;
+            text-align: center;
+            padding-left:185px;
+            font-weight:lighter;
+            color: black;
+            padding-right: 50px;
+        }
+
+        .last{
+            height: 50vh;
+            background-color: rgb(183, 206, 238);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .la{
+            background-color:  rgb(183, 206, 238);
+            height: 250px;
+            width: 300px;
+            margin-left: 40px;
+            margin-right: 80px;
+            margin-top: 100px;
+
+        }
+        
+        .tel{
+            height: 100px;
+            width: 100px;
+            margin-left: 100px;
+        }
+
+        .let{
+            text-align: center;
+            padding-top: 30px;
+        }
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/c88ac126d3.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Petfinder</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href="">Adopt a pet</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+    <div class="pet">
+        <p><em><b>Find your new best friend</b></em></p>
+        <form action="/action_page.php">
+            <div class="f">
+                <input class="search" type="text" placeholder="Search Kitten, Dog, etc." name="search">
+                <button type="submit"> <i style="width: 32px;" class="fa-solid fa-magnifying-glass fa-bounce"></i></button>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <section>
+    <h1 class="head">DEALS BY PET TYPE</h1>
+    <div class="alt">
+        <a href="/pet.html"><div class="s"><img class="dog" src="./dog.png" alt="">
+                <p class="d">Dogs</p>
+            </div>
+        </a>
+        <div class="s"><img class="dog" src="./cat.jpeg" alt="">
+            <p class="d">Cats</p>
+        </div>
+        <div class="s"><img class="dog" src="./other.jpg" alt="">
+            <p class="d">Other Animals</p>
+        </div>
+        <div class="s"><img class="dog" src="./shelter.png" alt="">
+            <p class="d">Shelters & Rescues</p>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <h1 class="h">How It Works?</h1>
+    <div class="work">
+        <div class="r"><img class="w" src="./search.png" alt="">
+            <h1 class="k"><b>Search</b></h1>
+           <p class="e">Search for a pet.</p>
+        </div>
+        <div class="r"><img class="w" src="./meet.png" alt="">
+            <h1 class="k"><b>Meet</b></h1>
+            <p class="e">Schedule your appointment to meet the pet you love.</p>
+        </div>
+        <div class="r"><img class="w" src="./buy.png" alt="">
+            <h1 class="k"><b>Adopt</b></h1>
+            <p class="e">Finnaly adopt the dog or cat you love.</p>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <h1 class="hc">OUR EXCELLENT PET CARE SERVICES</h1>
+
+        <div class="service">
+            <div class="z"><img class="ser" src="./boarding1.png" alt="" >
+                <h2 class="b">PET BOARDING <span class="p">A pet boarding facility welcomes your pet in safety and comfort while you're away. There are various types of accommodations available, depending on your pet's personality.</span></h2>
+            </div>
+            <div class="z"><img class="ser" src="./feed1.png" alt="">
+                <h2 class="b">PET FEEDING <span class="p">A healthy and balanced diet is essential for a healthy and happy pet.</span></h2>
+                <p></p>
+            </div>
+            <div class="z"><img class="ser" src="./grooming.png" alt="">
+                <h2 class="b">PET GROOMING <span class="p">Pet grooming is a health maintenance activity that is fundamental to the welfare of pets. Which can include basic hygiene care such as brushing, trimming hair, bathing, and trimming claws.</span></h2>
+            </div>
+            <div class="z"><img class="ser" src="./training.png" alt="">
+                <h2 class="b">PET TRAINING <span class="p">Training builds confidence, provides mental stimulation to pets and also strengthens the human-animal bond. </span></h2>
+            </div>
+            <div class="z"><img class="ser" src="./exercise.png" alt="">
+                <h2 class="b">PET EXERCISE <span class="p">Exercise keeps your pet healthy. Exercise helps to lower blood pressure and build up muscle. It'll even help the pet to have healthy bones.</span></h2>
+            </div>
+            <div class="z"><img class="ser" src="./treatment.png" alt="">
+                <h2 class="b">PET TREATMENT <span class="p">Provide proper treatment and medication to pets. </span></h2>
+            </div>
+    </div>
+    </section>
+
+    <section>
+        <div class="last">
+            <div class="la"><img class="tel" src="/location.png" alt="">
+                <h1 class="let">location</h1>
+            </div>
+            <div class="la"><img class="tel" src="/tel.png" alt="">
+                <h1 class="let">+91 1234567890</h1>
+            </div>
+            <div class="la"><img class="tel" src="/mail.png" alt="">
+                <h1 class="let">mail@gmail.com</h1>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

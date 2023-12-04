@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        h1{
+            color: red;
+            text-align:center;
+        }
+        body{
+            color: rgba(225,0,0,500);
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <script src="intro.js"></script>
+    <h1 onclick="h11()">hello</h1>
+    <h2 id="demo"> </h2>
+    <h3 id="get"> </h3>
+
+    <script>
+         document.getElementById("demo").innerHTML = "Davinder Singh"
+         document.write(100+200)
+         alert("Hello, I am Alexa")
+         console.log("Hello, I am Alexa")
+
+function h11() {
+    alert("hello")
+
+    let a=10;
+    let b=30;
+    let c=a+b;
+    document.getElementById("get").innerHTML = "The sum of a and b = " +c;
+
+}
+
+    </script> 
+</body>
+</html>
